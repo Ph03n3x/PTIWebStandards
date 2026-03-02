@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+:root {
+  --fonte1: verdana, Geneva, Tahoma, sans-serif;
+  --fonte2: "Passion One", cursive;
+  --fonte3: "Sriracha", cursive;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 1em;
+}
+
+html,
+body {
+  background-color: rgba(128, 128, 128, 0.144);
+  min-height: 100vh;
+  font-family: var(--fonte1);
+}
+
+header {
+  padding: 60px 20px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../imagens/pngtree-precious-wood-cantelling---types-of-wood---precious-woods-photo-photo-image_70258074.webp);
+  color: rgb(243, 231, 176);
+  text-align: center;
+}
+header h1 {
+  padding-top: 50px;
+  font-variant: small-caps;
+  font-family: var(--fonte2);
+  font-size: clamp(32px, 8vw, 80px);
+}
+header p {
+  padding-bottom: 50px;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+section {
+ 
+  line-height: 2em;
+  font-family: var(--fonte3);
+  font-size: clamp(18px, 3vw, 28px);
+  max-width: 900px;
+  margin: auto;
+}
+section > p {
+  padding-bottom: 2em;
+}
+section.normal {
+  color:white;
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  background-color: saddlebrown;
+}
+section.normal#imagem01 {
+  color: white;
+  background-image: url(../imagens/mulher-na-oficina-pintando-prancha-de-madeira_23-2148836056.avif);
+}
+
+section.imagem {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  background-color: rgb(59, 54, 54);
+  color: white;
+  box-shadow: inset 6px 6px 13px 0px black;
+}
+section.imagem > p {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  padding: 5px;
+  text-shadow: 1px 1px;
+}
+section#img01 {
+  background-image: url(../imagens/madeira-de-tabuas-no-armazem-ou-na-loja-para-construcao-1.jpg);
+  background-position: right center;
+}
+section#img02 {
+  background-image: url(../imagens/Como-fazer-móveis-de-cozinha-e-escritório-3.jpg);
+}
+section#img03 {
+  background-image: url(../imagens/trabalhador-de-marcenaria-usando-notebook-ao-lado-de-ferramentas-sobre-uma-mesa-de-madeira-768x512.jpg);
+}
+.form-contato {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.form-contato input,
+.form-contato textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: Arial, sans-serif;
+}
+
+.form-contato button {
+  background-color: #2e3092;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.form-contato button:hover {
+  background-color: #1f2166;
+}
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+@media (max-width: 768px) {
+  section.normal,
+  section.imagem {
+    background-attachment: scroll;
+  }
+}
